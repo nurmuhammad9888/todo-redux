@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "email": "nurshern9888@gmail.com",
+      "password": "$2a$10$t/x4D567jXBs6LAegzobhOnZL7hZE4qcqhZcBwY6DLBVnMqGupcEO",
+      "last_name": "Salom",
+      "frist_name": "Hello",
+      "id": 1
+    },
+    {
+      "email": "nyr@gmail.com",
+      "password": "$2a$10$Lv9q5VKxGek3xXNHGO3D/e9xeyXH5DsLqXzz3jGDUfW9cIvSbCKui",
+      "last_name": "nur",
+      "frist_name": "muhammad",
+      "id": 2
+    },
+    {
+      "email": "g@gamil.com",
+      "password": "$2a$10$9NTUIZryNXn/1FBFKs5XQusb3uNVvDK.5R0VWcIQGUzUd/E0KUJi2",
+      "last_name": "nur",
+      "frist_name": "muhammad",
+      "id": 3
+    },
+    {
+      "email": "n1512yr@gmail.com",
+      "password": "$2a$10$kYNvjRatA9VJ0HTb.4IHQuuyXyIdiB9dO5ofMSSkr/Z7pMWl96D4S",
+      "last_name": "nur",
+      "frist_name": "sher",
+      "id": 4
+    },
+    {
+      "email": "nur@gmail.com",
+      "password": "$2a$10$3GAQf1V4hRi5bNMszp.zJeoAccoMrMtA.2AEfSqo10NMJp0L7rI9i",
+      "last_name": "Nurmuhammad",
+      "frist_name": "Nur",
+      "id": 5
+    },
+    {
+      "email": "nur54564@gamil.com",
+      "password": "$2a$10$JmO8ya.cFGKT6DMVYK/JaOrPrRv7g4YXGRb3gID2I0PoLkhnJFAPq",
+      "last_name": "nur",
+      "frist_name": "sher",
+      "id": 6
+    },
+    {
+      "email": "sher@gamil.com",
+      "password": "$2a$10$l1/JgrjpvBkiBJ0r0rHRgOAgyHRUBz/wrFX6yshDYuDpd6Org6l6y",
+      "last_name": "nur",
+      "frist_name": "sher",
+      "id": 7
+    },
+    {
+      "email": "hh@gamil.com",
+      "password": "$2a$10$VXdeos53Bu9ldjCEAdRKT.HjxlXd1ulcHdZ2yrhs2z/ntz6ggwA0u",
+      "last_name": "Hello",
+      "frist_name": "Salom",
+      "id": 8
+    }
+  ],
+  "todos": [
+    {
+      "todo": "Hello",
+      "id": 3
+    },
+    {
+      "todo": "Salamun alaykum",
+      "id": 4
+    },
+    {
+      "todo": "hello",
+      "id": 5
+    },
+    {
+      "todo": "hello",
+      "id": 6
+    }
+  ]
+}
