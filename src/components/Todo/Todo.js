@@ -7,7 +7,7 @@ import { todoGet } from './TodoAction';
 export const Todo = () => {
     const todoRef = useRef();
     const state = useSelector(state => state);
-    const [sta, setSta] = useState(false);
+    const [change, setChange] = useState(false);
     const dispatch = useDispatch();
     const handlerSubmit = (evt) => {
         evt.preventDefault();
@@ -16,7 +16,7 @@ export const Todo = () => {
             todo:todoRef.current.value,
         }).then(res => {
             if (res.status === 201) {
-                setSta(true)
+                setChange(true)
                 console.log(res.data)
             }
         }).catch(err =>  console.log(err))
@@ -27,17 +27,17 @@ export const Todo = () => {
 			.then((res) => {
 				localStorage.setItem("todo", JSON.stringify(res.data));
 				todoGet(res.todo);
-                setSta(false)
+                setChange(false)
 			})
 			.catch((err) => console.log(err));
-    }, [sta])
+    }, [change])
 
     const handlerEdit = (id) => {
         const edit = prompt("Edit todo");
         axios.put("http://localhost:8080/todos/" + id, {
             todo: edit
         }).then(res => {
-                setSta(true)
+            setChange(true)
                 console.log(res.data)
         }).catch(err =>  console.log(err))
     }
@@ -45,7 +45,7 @@ export const Todo = () => {
     const handlerDelet = (id) => {
         axios.delete("http://localhost:8080/todos/" + id
         ).then(res => {
-                setSta(true)
+            setChange(true)
                 console.log(res.data)
         }).catch(err =>  console.log(err))
     }
