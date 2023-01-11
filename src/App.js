@@ -1,18 +1,14 @@
 import { useSelector } from "react-redux";
 import { Register } from "./components/Register/Register";
 import { Todo } from "./components/Todo/Todo";
-import { useNavigate } from "react-router-dom";
 
 function App() {
   const state = useSelector((state) => state.user);
 
-
-
   if (state.token) {
-
     return <Todo/>
   }else{
-    return  <Register/>
+    return <Register/>
   }
 }
 

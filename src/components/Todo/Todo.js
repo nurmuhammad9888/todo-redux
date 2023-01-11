@@ -7,8 +7,8 @@ import { todoGet } from './TodoAction';
 export const Todo = () => {
     const todoRef = useRef();
     const state = useSelector(state => state);
-    const [sta, setSta] = useState(false)
-    const dispatch = useDispatch()
+    const [sta, setSta] = useState(false);
+    const dispatch = useDispatch();
     const handlerSubmit = (evt) => {
         evt.preventDefault();
 
@@ -24,9 +24,9 @@ export const Todo = () => {
 
     useEffect(() => {
 		axios.get("http://localhost:8080/todos")
-			.then((data) => {
-				localStorage.setItem("todo", JSON.stringify(data.data));
-				todoGet(data.todo);
+			.then((res) => {
+				localStorage.setItem("todo", JSON.stringify(res.data));
+				todoGet(res.todo);
                 setSta(false)
 			})
 			.catch((err) => console.log(err));
@@ -62,7 +62,7 @@ export const Todo = () => {
         <div>
             <form className='d-flex align-items-center my-5 w-75 mx-auto' onSubmit={handlerSubmit}>
                 <input className='form-control' type="text" ref={todoRef} placeholder="Todo..."/>
-                <button className='btn btn-success' type='submit'>Send</button>
+                <button className='btn btn-success ms-3' type='submit'>Send</button>
             </form>
             <ul className='list-unstyled w-75 mx-auto mt-4 p-3'>
 					{state.todo.todo.map((item) => (

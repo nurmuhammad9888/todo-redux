@@ -55,24 +55,42 @@
       "last_name": "Hello",
       "frist_name": "Salom",
       "id": 8
+    },
+    {
+      "email": "nurrmmmm@gamil.com",
+      "password": "$2a$10$ewahM3WqSOlyX07W2sjtT.L6XyIa1vT3FLBDRH5K4WDs.c.WpAIT.",
+      "last_name": "Nurm",
+      "frist_name": "uhammad",
+      "id": 9
+    },
+    {
+      "email": "sddsgvsdf@gamil.com",
+      "password": "$2a$10$rsWNdkny9/e27GGJtpHhjOlnRfd7KC8NADO6TOURozGKDSZeW6Pqm",
+      "last_name": "dfgdsfg",
+      "frist_name": "gdsgvdsvfg",
+      "id": 10
     }
   ],
   "todos": [
     {
-      "todo": "Hello",
-      "id": 3
-    },
-    {
-      "todo": "Salamun alaykum",
-      "id": 4
-    },
-    {
       "todo": "hello",
-      "id": 5
+      "id": 3
     },
     {
       "todo": "hello",
       "id": 6
+    },
+    {
+      "todo": "Helloooo",
+      "id": 7
+    },
+    {
+      "todo": "salom",
+      "id": 8
+    },
+    {
+      "todo": "hellos",
+      "id": 9
     }
   ]
 }

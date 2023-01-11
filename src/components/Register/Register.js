@@ -21,7 +21,7 @@ export const Register = () => {
             password:passwordRef.current.value,
         }).then(res => {
             if (res.status === 201) {
-                dispatch(saveToken(localStorage.setItem("token", res.data.accessToken)))
+                dispatch(saveToken(res.data.accessToken, localStorage.setItem("token", res.data.accessToken)))
                 dispatch(userGet(res.data.user, localStorage.setItem("user", JSON.stringify(res.data.user))))
                 console.log(res.data)
             }
